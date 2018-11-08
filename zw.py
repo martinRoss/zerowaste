@@ -26,8 +26,8 @@ ORDER = neopixel.RGB
 pixels = neopixel.NeoPixel(pixel_pin, num_pixels, brightness=1, auto_write=True,
                            pixel_order=ORDER)
 
-green = [0, 255, 0]
-blue = [0,0,255]
+green = (0, 255, 0)
+blue = (0,0,255)
 
 # recycle self
 for x in range(42, 60):
