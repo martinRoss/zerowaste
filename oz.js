@@ -1,15 +1,16 @@
 /**
- * Windows stereo output: VoiceMeter input
- * VoiceMeter inputs: none
- * VoiceMeter output A1: MME: Headset (Bose)
- * VoiceMeter output A2: none
+ * Windows stereo output: VoiceMeeter input
+ * VoiceMeeter inputs: none
+ * VoiceMeeter output A1: MME: Headset (Bose)
+ * VoiceMeeter output A2: none
+ * Hangouts Microphone: Voicemeeter Output
  */
 
 const say = require('say');
 const readline = require('readline');
 
 const voice = 'Microsoft Zira Desktop';
-const speed = 1.1;
+const speed = 1.05;
 const s = function (text) { say.speak(text, voice, speed) };
 
 const rl = readline.createInterface({
