@@ -12,6 +12,15 @@ const readline = require('readline');
 const voice = 'Microsoft Zira Desktop';
 const speed = 1.05;
 const s = function (text) { say.speak(text, voice, speed) };
+const r = function (text) {
+    say.export(text, voice, speed, 'recording.wav', (err) => {
+        if (err) {
+          return console.error(err)
+        }
+
+        console.log('Text has been saved to recording.wav.')
+      })
+}
 
 const rl = readline.createInterface({
   input: process.stdin,
